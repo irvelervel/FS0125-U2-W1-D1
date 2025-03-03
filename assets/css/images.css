@@ -1,0 +1,12 @@
+/* rendiamo il gatto grande come il contenitore */
+
+img {
+  width: 100%;
+  /* in questo caso il 100% si riferisce alla larghezza del contenitore (article) */
+}
+
+/* rendiamo il gatto al massimo grande come la propria dimensione nativa */
+
+img {
+  max-width: 100%;
+}

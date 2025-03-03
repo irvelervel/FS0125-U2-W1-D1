@@ -52,7 +52,37 @@ p {
 /* risoluzioni tipiche da laptop/fisso */
 /* 1366 <- hd ready */
 /* 1920 <- fullhd */
+@media screen and (min-width: 576px) and (orientation: portrait) {
+  /* STILI TABLET */
+  #first {
+    background-color: purple;
+  }
+  #second {
+    background-color: yellow;
+  }
 
-/* STILI TABLET */
-@media screen and (min-width: 576px) {
+  h1 {
+    color: red;
+  }
+}
+
+/* DEFINIZIONE DELLE MEDIA QUERIES: una MQ è una direttiva CSS che permette di 
+creare dei BLOCCHI CONDIZIONALI di CSS, che verranno applicati al documento
+se e solo le loro condizioni verranno rispettate */
+
+@media screen and (min-width: 1200px) {
+  /* STILI COMPUTER */
+  #first {
+    background-color: beige;
+  }
+  #second {
+    background-color: grey;
+  }
+}
+
+@media print {
+  /* STILI PER LA STAMPA */
+  footer {
+    display: none;
+  }
 }
