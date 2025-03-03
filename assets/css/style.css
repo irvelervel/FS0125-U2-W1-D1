@@ -1,0 +1,58 @@
+/* ora i vostri fogli CSS si riempiranno di regole, per rimediare al foglio di reset,
+per applicare gli stili mobile e per aggiustare i layout su schermi più larghi...
+il mio consiglio è di inserire sezioni tramite commenti al fine di non perdersi
+e di mantenere il codice "ordinato" */
+/* 
+    RIPRISTINO STILI DOPO RESET
+*/
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+/* 
+    STILI MOBILE
+*/
+
+#first,
+#second {
+  /* a entrambi gli article... */
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+}
+
+#first {
+  margin-bottom: 1em;
+  background-color: orange;
+}
+
+#second {
+  background-color: green;
+}
+
+/* 576px è un valore "soglia" (breakpoint) comune per delimitare degli schermi mobile */
+/* se la width di uno schermo è < 576px quel dispositivo viene definito "mobile" */
+/* se la width di uno schermo è > 576px quel dispositivo non è più uno smartphone */
+
+/* 1200px è un valore "soglia" (breakpoint) comune per delimitare degli schermi tablet */
+/* se la width di uno schermo è > 576px && < 1200 quel dispositivo viene definito "tablet" */
+/* se la width di uno schermo è > 1200px quel dispositivo non è più un tablet */
+
+/* risoluzioni tipiche da laptop/fisso */
+/* 1366 <- hd ready */
+/* 1920 <- fullhd */
+
+/* STILI TABLET */
+@media screen and (min-width: 576px) {
+}
